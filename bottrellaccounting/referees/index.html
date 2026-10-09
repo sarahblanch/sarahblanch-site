@@ -1,17 +1,75 @@
-<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Sarah Blanch | Private page</title><style>
-:root{--bg:#faf8f4;--ink:#1d2430;--mute:#5d6674;--line:#e3ded4;--accent:#1f5f5b}
-@media (prefers-color-scheme:dark){:root{--bg:#14181d;--ink:#eceae4;--mute:#a2a9b3;--line:#2a3039;--accent:#6fc2b9}}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-form{width:min(360px,calc(100% - 40px))}h1{font-size:24px;margin:0 0 6px}p{color:var(--mute);margin:0 0 18px}
-input,button{width:100%;font:inherit;padding:13px 14px;border-radius:8px;border:1.5px solid var(--line);background:transparent;color:inherit;margin-bottom:10px}
-button{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600;cursor:pointer}#e{color:#b3261e;min-height:1.4em;font-size:14px;margin:0}
-</style></head><body><form id="f"><h1>Private page</h1><p>Please enter the password provided to view this page.</p><input id="p" type="password" placeholder="Password" autocomplete="current-password" autofocus><button>View</button><p id="e"></p></form><script>
-const S="NhloSWEYNF42baz0BDlyzA==",I="Hj3a4EVXlfxcBlsk",D="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",d=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
-async function go(pw){const k=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
-const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:d(S),iterations:600000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']);
-const t=await crypto.subtle.decrypt({name:'AES-GCM',iv:d(I)},key,d(D));try{sessionStorage.setItem('sbpw',pw)}catch(x){}
-document.open();document.write(new TextDecoder().decode(t));document.close();}
-document.getElementById('f').addEventListener('submit',async ev=>{ev.preventDefault();const e=document.getElementById('e');e.textContent='';
-try{await go(document.getElementById('p').value)}catch(x){e.textContent='Incorrect password.';}});
-(async()=>{try{const s=sessionStorage.getItem('sbpw');if(s)await go(s)}catch(x){}})();
-</script></body></html>
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Sarah Blanch | Referees</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Figtree:wght@400;600&display=swap"><style>
+:root{--bg:#faf8f4;--ink:#1d2430;--mute:#5d6674;--line:#e3ded4;--accent:#1f5f5b;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#14181d;--ink:#eceae4;--mute:#a2a9b3;--line:#2a3039;--accent:#6fc2b9;--card:#1b2026}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,serif}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px 64px}a{color:var(--accent);font:600 14px system-ui,sans-serif;text-decoration:none}
+h1{font:700 clamp(30px,6vw,40px)/1.1 system-ui,sans-serif;margin:18px 0 8px}.lede{color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:14px}
+.card b{font:600 17px system-ui,sans-serif}.card p{margin:4px 0 0;color:var(--mute);font:15px system-ui,sans-serif}
+.back{font:600 14px system-ui,sans-serif;text-decoration:none;display:inline-block;margin-top:28px}:root{--bg:#f2e9d8;--card:#faf4e8;--deep:#e6d9c0;--ink:#2e1b1e;--mute:#6b544d;--accent:#8a5e14;--line:#c9b99f;--aub:#4b2a30;--rust:#b04e1c;--onrust:#fbf3e4;--focus:#2e5ba8;--soft:#d9b45c;--sq:#4b2a30}
+@media (prefers-color-scheme:dark){:root{--bg:#2a1b1e;--card:#372629;--deep:#1f1315;--ink:#f2e9d8;--mute:#c7b5a3;--accent:#ddb04e;--line:#4a383a;--aub:#e8d3c9;--rust:#e07a3a;--onrust:#2a1b1e;--focus:#9bbcf0;--soft:#5a4320;--sq:#e8d3c9}}
+body{font:400 17px/27px 'Figtree','Helvetica Neue',Arial,sans-serif!important;background:var(--bg);color:var(--ink)}
+h1,h2,h3,.sans,.k,.kicker,.contact,.role,.card b,a.card b,.stat b,.meta,footer,.back,.btn,.lede{font-family:'Figtree','Helvetica Neue',Arial,sans-serif}
+h1{font-family:'Fraunces','Iowan Old Style',Georgia,serif!important;font-weight:500!important;color:var(--aub);letter-spacing:-.02em;line-height:1.02}
+.job h3,.grid h3,.ref h2,a.card b,.stat b{font-family:'Fraunces','Iowan Old Style',Georgia,serif!important;font-weight:500!important}
+.stat b{color:var(--aub)!important;font-size:26px!important}
+a.card b{color:var(--aub)!important;font-size:21px!important}
+.ref h2{color:var(--aub);font-size:24px!important}
+h2,.k,.kicker,.role{text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:600;color:var(--accent)}
+.ref h2{text-transform:none;letter-spacing:0;font-size:24px}
+.role{font-size:13px!important;margin:4px 0 12px}
+.lede,.meta,.contact span,.stat span,.grid p,a.card span,footer{color:var(--mute)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.card,a.card,.stat,.ref{background:var(--card)!important;border:1px solid var(--line)!important;border-radius:6px!important}
+a.card:hover{border-color:var(--accent)!important}
+section{border-top:1px solid var(--line)!important}
+footer{border-top:1px solid var(--line)!important}
+.btn{border-radius:2px!important;font-size:15px}
+.btn.p{background:var(--rust)!important;border-color:var(--rust)!important;color:var(--onrust)!important}
+.btn.s{color:var(--ink)!important;border-color:var(--mute)!important}
+.orn{position:absolute;top:0;right:0;width:96px;height:96px;opacity:.9;pointer-events:none}
+.wrap{position:relative}
+.back{color:var(--accent)}
+.ref{padding:22px 24px 18px;margin:0 0 18px}
+.ref h2{margin:0}
+.ref p{margin:0 0 12px;color:var(--ink)}
+.ref .contact{border-top:1px solid var(--line);padding-top:12px;font-size:15px;line-height:1.8;margin:0}
+.ref .contact span{display:inline-block;min-width:64px}
+header .kicker{display:block}
+.back{display:inline-block;margin-top:28px;font-weight:600;font-size:14px;text-decoration:none}
+footer{padding:24px 0 48px;font-size:14px}
+</style></head><body><div class="wrap"><svg class="orn" viewBox="0 0 96 96" aria-hidden="true" fill="none" stroke="var(--sq)" stroke-width="1"><rect x="0.5" y="0.5" width="95" height="95"/><rect x="8.5" y="8.5" width="79" height="79"/><rect x="16.5" y="16.5" width="63" height="63"/><rect x="24.5" y="24.5" width="47" height="47"/><rect x="32.5" y="32.5" width="31" height="31"/><rect x="40.5" y="40.5" width="15" height="15"/></svg><a class="back" href="../">&larr; Back</a>
+<header style="padding-top:24px">
+  <div class="kicker">Newcastle, NSW</div>
+  <h1>Referees</h1>
+  <p class="lede">Three people who worked with me at Newcastle City Business Centre (NCBC), where I worked from 2018 to 2026. Please feel free to contact them directly.</p>
+</header>
+<div class="ref">
+  <h2>Petah Blanch</h2>
+  <div class="role">Previous Office Manager &middot; Newcastle City Business Centre</div>
+  <p>Petah worked at NCBC for around nine years and was my manager. Throughout my employment she trained me in all aspects of the role, so I was comfortable across the whole business when I stepped into the Office Manager role in 2025. The only areas I needed to learn were some bookkeeping, including providing BAS data to the accountants, payroll reconciliation and a couple of other minor tasks. I picked these up quickly and took them over as soon as I started as manager.</p>
+  <div class="contact">
+    <div><span>Phone</span><a href="tel:+61408490904">0408 490 904</a></div>
+    <div><span>Email</span>Available on request via <a href="mailto:admin@sarahblanch.com">admin@sarahblanch.com</a></div>
+  </div>
+</div>
+<div class="ref">
+  <h2>Hollie Smith</h2>
+  <div class="role">Receptionist &middot; Newcastle City Business Centre</div>
+  <p>I trained Hollie as a receptionist and she was excellent at it. We worked closely and well together. As well as reception, she took on our social media and Google Business Profile marketing, while I looked after the website, the Google integrations and tracking, and Google Ads.</p>
+  <div class="contact">
+    <div><span>Phone</span><a href="tel:+61401297037">0401 297 037</a></div>
+    <div><span>Email</span><a href="mailto:holliejade.smith@hotmail.com">holliejade.smith@hotmail.com</a></div>
+  </div>
+</div>
+<div class="ref">
+  <h2>Ben Walker</h2>
+  <div class="role">Tenant &middot; Newcastle City Business Centre</div>
+  <p>Ben was a tenant at NCBC. He was so happy with the service I provided that he offered to pass on his recommendation.</p>
+  <div class="contact">
+    <div><span>Contact</span>Details available on request &mdash; <a href="mailto:admin@sarahblanch.com?subject=Referee%20contact%20details%20-%20Ben%20Walker">email me</a></div>
+  </div>
+</div>
+<footer><a href="mailto:admin@sarahblanch.com">admin@sarahblanch.com</a> &middot; 0422 324 833</footer>
+</div></body></html>
