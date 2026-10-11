@@ -1,0 +1,55 @@
+.bottrell-followup{--brand:#303186;--brand-dark:#1d1d4f;--ink:#26262e;--muted:#555560;--rule:#d8d8e4;--soft:#f5f5f8;margin:0;background:#fff;color:var(--ink);font-family:Roboto,Arial,sans-serif;font-size:17px;line-height:1.62}
+.bottrell-followup *{box-sizing:border-box}
+.bottrell-followup .shell{max-width:1040px;margin:auto;padding:28px 36px 24px}
+.bottrell-followup .site-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:22px;border-bottom:2px solid var(--brand)}
+.bottrell-followup .site-header img{display:block;width:182px;height:auto}
+.bottrell-followup .site-header span{font-size:14px;color:var(--muted)}
+.bottrell-followup a{color:var(--brand);text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+.bottrell-followup a:hover{color:var(--brand-dark)}
+.bottrell-followup :focus-visible{outline:3px solid var(--brand);outline-offset:4px}
+.bottrell-followup .skip-link{position:fixed;left:10px;top:-80px;padding:10px 15px;background:#fff;z-index:10}
+.bottrell-followup .skip-link:focus{top:10px}
+.bottrell-followup .page-nav{display:flex;gap:24px;flex-wrap:wrap;margin:20px 0;font-size:15px}
+.bottrell-followup h1,.bottrell-followup h2,.bottrell-followup h3,.bottrell-followup legend{font-family:Poppins,Arial,sans-serif;font-weight:700;color:var(--brand-dark);line-height:1.34}
+.bottrell-followup h1{font-size:30px;margin:32px 0 18px}
+.bottrell-followup h2{font-size:23px;margin:35px 0 14px;padding-top:12px;border-top:1px solid var(--rule)}
+.bottrell-followup h3{font-size:19px;margin-top:26px}
+.bottrell-followup p{margin:0 0 17px}
+.bottrell-followup li{margin-bottom:10px}
+.bottrell-followup ul,.bottrell-followup ol{padding-left:24px}
+.bottrell-followup .page-body{max-width:920px}
+.bottrell-followup .page-download{margin-top:-8px;font-size:14px}
+.bottrell-followup blockquote{margin:22px 0;padding:16px 20px;border-left:3px solid var(--brand);background:var(--soft)}
+.bottrell-followup blockquote p:last-child{margin:0}
+.bottrell-followup table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.5;margin:22px 0}
+.bottrell-followup th{background:var(--brand);color:white;text-align:left;vertical-align:top;padding:11px 12px}
+.bottrell-followup td{vertical-align:top;padding:11px 12px;border-bottom:1px solid var(--rule)}
+.bottrell-followup tr:nth-child(even) td{background:var(--soft)}
+.bottrell-followup code{font-family:ui-monospace,monospace;font-size:.88em;overflow-wrap:anywhere}
+.bottrell-followup footer{margin-top:45px;padding-top:14px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted)}
+.bottrell-followup[data-page=home] h1{margin-top:38px;font-size:27px}
+.bottrell-followup[data-page=home] .page-body>ul{list-style:none;padding:0;max-width:760px;margin:25px 0}
+.bottrell-followup[data-page=home] .page-body>ul li{padding:13px 0;margin:0;border-bottom:1px solid var(--rule)}
+.bottrell-followup[data-page=home] .page-body>ul a{display:block}
+.bottrell-followup .identity-fields{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
+.bottrell-followup label{display:block;font-weight:500;margin-bottom:8px}
+.bottrell-followup input:not([type=checkbox]),.bottrell-followup textarea{display:block;width:100%;font:inherit;color:var(--ink);background:white;padding:11px 12px;border:1px solid #898994;border-radius:2px}
+.bottrell-followup textarea{resize:vertical;min-height:140px;line-height:1.6}
+.bottrell-followup .optional{font-weight:400;color:var(--muted);font-size:15px}
+.bottrell-followup .bot-field{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.bottrell-followup .question-topics{display:flex;gap:10px 22px;flex-wrap:wrap;padding:14px 0 24px;font-size:14px}
+.bottrell-followup .question-group{margin:24px 0 0;padding:18px 0 0;border:0;border-top:2px solid var(--brand);min-width:0;scroll-margin-top:20px}
+.bottrell-followup legend{font-size:20px;padding:0 12px 0 0;max-width:100%}
+.bottrell-followup .question{margin:10px 0 30px}
+.bottrell-followup .question-number{font-weight:700;color:var(--brand)}
+.bottrell-followup .answer-count,.bottrell-followup .draft-state{font-size:14px;color:var(--muted)}
+.bottrell-followup .consent{display:flex;gap:10px;align-items:flex-start;margin:28px 0 20px;font-weight:400}
+.bottrell-followup input[type=checkbox]{width:20px;height:20px;accent-color:var(--brand);flex-shrink:0;margin-top:3px}
+.bottrell-followup .form-actions{display:flex;gap:12px;flex-wrap:wrap}
+.bottrell-followup button{font:inherit;font-size:16px;border:1px solid var(--brand);border-radius:2px;background:var(--brand);color:white;padding:11px 18px;cursor:pointer;min-height:46px}
+.bottrell-followup button.secondary{background:white;color:var(--brand)}
+.bottrell-followup button.text-button{background:none;border-color:transparent;color:var(--muted);text-decoration:underline}
+.bottrell-followup button:disabled{opacity:.6;cursor:wait}
+.bottrell-followup .form-status:not(:empty){margin-top:20px;padding:14px;border-left:3px solid var(--brand);background:var(--soft)}
+@media(max-width:680px){.bottrell-followup .shell{padding:20px 18px}.bottrell-followup .site-header{align-items:flex-start;flex-direction:column;gap:12px}.bottrell-followup .site-header img{width:159px}.bottrell-followup h1{font-size:26px}.bottrell-followup h2{font-size:21px}.bottrell-followup table{display:block;overflow-x:auto}.bottrell-followup th,.bottrell-followup td{min-width:160px}.bottrell-followup .identity-fields{grid-template-columns:1fr;gap:16px}.bottrell-followup .question-topics{flex-direction:column}.bottrell-followup .form-actions{flex-direction:column;align-items:stretch}.bottrell-followup legend{font-size:18px}}
+@media print{.bottrell-followup{font-size:11pt}.bottrell-followup .skip-link{display:none}.bottrell-followup .shell{padding:0;max-width:none}.bottrell-followup .page-nav,.bottrell-followup .page-download,.bottrell-followup .form-actions,.bottrell-followup .question-topics,.bottrell-followup .consent,.bottrell-followup .answer-count,.bottrell-followup .draft-state,.bottrell-followup .form-status{display:none}.bottrell-followup .question{break-inside:avoid}.bottrell-followup textarea{height:140px;border-color:#777}.bottrell-followup table{display:table;overflow:visible}.bottrell-followup tr{break-inside:avoid}.bottrell-followup a{color:inherit}.bottrell-followup h1{font-size:23pt}.bottrell-followup h2{font-size:16pt}.bottrell-followup .site-header img{width:140px}.bottrell-followup footer{font-size:9pt}}
