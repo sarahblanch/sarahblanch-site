@@ -14,6 +14,9 @@
   // Set data-submission="available" on the form only after a verified real submission.
   const submissionUnavailable = typeof form.getAttribute === 'function' && form.getAttribute('data-submission') === 'unavailable';
   const unavailableMessage = 'Online submission is not connected yet, so nothing can be sent from this page. Your draft stays in this browser; use Download my answers or the printable workbook.';
+  // Absolute endpoint (e.g. a serverless function) when the host cannot serve api/answers itself.
+  const configuredEndpoint = typeof form.getAttribute === 'function' && form.getAttribute('data-endpoint');
+  const endpoint = configuredEndpoint && /^https:\/\//.test(configuredEndpoint) ? configuredEndpoint : new URL('api/answers',location.href);
   let submissionId = '';
   let fingerprint = '';
 
@@ -97,7 +100,7 @@
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 25000);
     try {
-      const response = await fetch(new URL('api/answers',location.href), {
+      const response = await fetch(endpoint, {
         method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({schemaVersion:1,...values,consent:true,website:document.getElementById('website').value,submissionId}),signal:controller.signal
       });
