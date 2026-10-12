@@ -13,7 +13,7 @@
   const key = 'sarah-blanch-rebecca-answers-v1';
   // Set data-submission="available" on the form only after a verified real submission.
   const submissionUnavailable = typeof form.getAttribute === 'function' && form.getAttribute('data-submission') === 'unavailable';
-  const unavailableMessage = 'Online submission is not connected yet, so nothing can be sent from this page. Your draft stays in this browser; use Download my answers or the printable workbook.';
+  const unavailableMessage = 'Online submission is not available, so nothing is sent from this page. Your draft stays in this browser. Use Download my answers and email the file to admin@sarahblanch.com, or use the printable workbook.';
   // Absolute endpoint (e.g. a serverless function) when the host cannot serve api/answers itself.
   const configuredEndpoint = typeof form.getAttribute === 'function' && form.getAttribute('data-endpoint');
   const endpoint = configuredEndpoint && /^https:\/\//.test(configuredEndpoint) ? configuredEndpoint : new URL('api/answers',location.href);
@@ -34,7 +34,7 @@
         draftState.textContent = 'Draft saved in this browser. It has not been submitted.';
       } else {
         localStorage.removeItem(key);
-        draftState.textContent = submissionUnavailable ? 'Online submission is not connected yet. Nothing on this page is sent; use Download my answers or the printable workbook.' : 'Answers are submitted only when you select Submit answers.';
+        draftState.textContent = submissionUnavailable ? 'Nothing on this page is sent. Your draft is saved in this browser; use Download my answers to keep a copy.' : 'Answers are submitted only when you select Submit answers.';
       }
     } catch {
       draftState.textContent = 'This browser cannot save a draft. Use Download my answers before leaving.';
@@ -58,7 +58,7 @@
   form.addEventListener('input', updateDraft);
   if (submissionUnavailable) {
     submitButton.disabled = true;
-    submitButton.textContent = 'Submission not connected yet';
+    submitButton.textContent = 'Online submission unavailable';
     status.textContent = unavailableMessage;
   }
 
@@ -73,6 +73,10 @@
 
   form.addEventListener('submit', async event => {
     event.preventDefault();
+    if (submissionUnavailable) {
+      showStatus(unavailableMessage);
+      return;
+    }
     if (!form.reportValidity()) return;
     const values = fields();
     if (!values.answers.some(a => a.answer.trim())) {
@@ -80,10 +84,6 @@
       return;
     }
     if (!consent.checked) return;
-    if (submissionUnavailable) {
-      showStatus(unavailableMessage);
-      return;
-    }
     if (location.protocol === 'file:') {
       showStatus('This local preview cannot send answers. Download your answers or use the printable workbook.');
       return;
